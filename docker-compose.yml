@@ -4,7 +4,7 @@ services:
     build: slskd-chat-bot
     env_file: .env
     environment:
-      -SLSKD_SLSK_DESCRIPTION=I am a good bot :3
+      - SLSKD_SLSK_DESCRIPTION=I am a good bot :3
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
