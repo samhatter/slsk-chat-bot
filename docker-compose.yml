@@ -2,7 +2,7 @@ services:
   slskd-chat-bot:
     image: 127.0.0.1:5000/slskd-chat-bot
     build: slskd-chat-bot
-    env_file: ./.env
+    env_file: .env
     environment:
       - SLSKD_SLSK_DESCRIPTION=I am a good bot :3
     cap_add:
@@ -14,6 +14,6 @@ services:
     image: 127.0.0.1:5000/orchestrator
     build: orchestrator
     restart: unless-stopped
-    env_file: ./.env
+    env_file: .env
     deploy:
       replicas: 1
