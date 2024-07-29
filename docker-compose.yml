@@ -1,0 +1,19 @@
+services:
+  slskd-chat-spammer:
+    image: 127.0.0.1:5000/slskd-chat-spammer
+    build: slskd-chat-spammer
+    env_file: .env
+    environment:
+      -SLSKD_SLSK_DESCRIPTION=I am a good bot :3
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+    deploy:
+      replicas: 20
+  orchestrator:
+    image: 127.0.0.1:5000/orchestrator
+    build: orchestrator
+    restart: unless-stopped
+    env_file: .env
+    deploy:
+      replicas: 1
