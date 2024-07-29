@@ -1,7 +1,7 @@
 services:
-  slskd-chat-spammer:
-    image: 127.0.0.1:5000/slskd-chat-spammer
-    build: slskd-chat-spammer
+  slskd-chat-bot:
+    image: 127.0.0.1:5000/slskd-chat-bot
+    build: slskd-chat-bot
     env_file: .env
     environment:
       -SLSKD_SLSK_DESCRIPTION=I am a good bot :3
