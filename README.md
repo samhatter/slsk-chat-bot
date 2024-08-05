@@ -4,7 +4,7 @@
 3. Create a .env in root folder:
 ```
 - USER=PIA VPN Username
-- PASS=PAI VPN Password
+- PASS=PIA VPN Password
 - SLSKD_ROOMS=indie
 ```
 4. Build images from compose.
